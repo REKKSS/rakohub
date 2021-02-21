@@ -39,13 +39,6 @@ public class scoreboard {
         Integer globalPlayerCount = main.playerCount.get("ALL");
         Score score1 = objective.getScore(ChatColor.WHITE + "Players: " + ChatColor.GREEN + globalPlayerCount);
         score1.setScore(2);
-        Score ipAddresss = null;
-        try {
-            ipAddresss = objective.getScore(ChatColor.GRAY + ipAddress.getDomainName());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        ipAddresss.setScore(1);
         Iterator var7 = Bukkit.getOnlinePlayers().iterator();
 
         while(var7.hasNext()) {
