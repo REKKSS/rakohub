@@ -2,15 +2,13 @@ package nl.rako.rakohub.Events;
 
 import nl.rako.rakohub.Inventory.GameSelector;
 import nl.rako.rakohub.Functions.Bungee;
-import nl.rako.rakohub.Functions.console;
 import nl.rako.rakohub.Inventory.LobbySelector;
-import nl.rako.rakohub.main;
+import nl.rako.rakohub.rakohub;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.block.Action;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.inventory.ItemStack;
@@ -24,8 +22,8 @@ public class OnInventoryClick implements Listener {
         Player player = e.getPlayer();
         ItemStack clickedItem = e.getItem();
         if (clickedItem.getType().equals(Material.NETHER_STAR)) {
-            main.playerCount.put("lobby", main.playerCount.get("lobby"));
-            main.playerCount.put("lobby", main.playerCount.get("lobby2"));
+            rakohub.playerCount.put("lobby", rakohub.playerCount.get("lobby"));
+            rakohub.playerCount.put("lobby", rakohub.playerCount.get("lobby2"));
             LobbySelector.openLobbySelector(player);
         } else if (clickedItem.getType().equals(Material.COMPASS)) {
             GameSelector.openGameSelector(player);

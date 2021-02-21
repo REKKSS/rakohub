@@ -8,7 +8,7 @@ package nl.rako.rakohub.Functions;
 import com.google.common.io.ByteArrayDataInput;
 import com.google.common.io.ByteArrayDataOutput;
 import com.google.common.io.ByteStreams;
-import nl.rako.rakohub.main;
+import nl.rako.rakohub.rakohub;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;
@@ -28,7 +28,7 @@ public class Bungee implements PluginMessageListener {
             String subChannel = input.readUTF();
             if (subChannel.equals("PlayerCount")) {
                 String server = input.readUTF();
-                main.playerCount.put(server, input.readInt());
+                rakohub.playerCount.put(server, input.readInt());
             }
             if (subChannel.equals("Connect")) return;
 
@@ -40,7 +40,7 @@ public class Bungee implements PluginMessageListener {
 
         output.writeUTF("Connect");
         output.writeUTF(server);
-        player.sendPluginMessage(main.plugin, "BungeeCord", output.toByteArray());
+        player.sendPluginMessage(rakohub.plugin, "BungeeCord", output.toByteArray());
     }
 
     public static void bungeePlayerCount(String server){
@@ -51,7 +51,7 @@ public class Bungee implements PluginMessageListener {
 
 
         for(Player player : Bukkit.getOnlinePlayers()) {
-            player.sendPluginMessage(main.plugin, "BungeeCord", output.toByteArray());
+            player.sendPluginMessage(rakohub.plugin, "BungeeCord", output.toByteArray());
         }
 
 

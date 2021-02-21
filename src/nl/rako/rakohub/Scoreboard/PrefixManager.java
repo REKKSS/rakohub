@@ -5,13 +5,12 @@
 
 package nl.rako.rakohub.Scoreboard;
 
-import nl.rako.rakohub.Scoreboard.scoreboard;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.scoreboard.Team;
 
-public class prefix {
-    public prefix() {
+public class PrefixManager {
+    public PrefixManager() {
     }
 
     public static String getRankboard(Player player) {
@@ -26,13 +25,13 @@ public class prefix {
 
     public static Team getPlayerTeam(Player player) {
         if (player.hasPermission("rank.owner")) {
-            return scoreboard.board.getTeam("owner") == null ? scoreboard.board.registerNewTeam("owner") : scoreboard.board.getTeam("owner");
+            return RakoScoreboardManager.board.getTeam("owner") == null ? RakoScoreboardManager.board.registerNewTeam("owner") : RakoScoreboardManager.board.getTeam("owner");
         } else if (player.hasPermission("rank.admin")) {
-            return scoreboard.board.getTeam("admin") == null ? scoreboard.board.registerNewTeam("admin") : scoreboard.board.getTeam("admin");
+            return RakoScoreboardManager.board.getTeam("admin") == null ? RakoScoreboardManager.board.registerNewTeam("admin") : RakoScoreboardManager.board.getTeam("admin");
         } else if (player.hasPermission("rank.vip")) {
-            return scoreboard.board.getTeam("vip") == null ? scoreboard.board.registerNewTeam("vip") : scoreboard.board.getTeam("vip");
+            return RakoScoreboardManager.board.getTeam("vip") == null ? RakoScoreboardManager.board.registerNewTeam("vip") : RakoScoreboardManager.board.getTeam("vip");
         } else {
-            return scoreboard.board.getTeam("default") == null ? scoreboard.board.registerNewTeam("default") : scoreboard.board.getTeam("default");
+            return RakoScoreboardManager.board.getTeam("default") == null ? RakoScoreboardManager.board.registerNewTeam("default") : RakoScoreboardManager.board.getTeam("default");
         }
     }
 

@@ -7,8 +7,8 @@ package nl.rako.rakohub.Functions;
 
 import org.bukkit.Bukkit;
 
-public class console {
-    public console() {
+public class Console {
+    public Console() {
     }
 
     public static void sendConsole(String msg) {

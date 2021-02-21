@@ -3,8 +3,8 @@ package nl.rako.rakohub;
 
 import nl.rako.rakohub.Events.*;
 import nl.rako.rakohub.Functions.Bungee;
-import nl.rako.rakohub.Functions.console;
-import nl.rako.rakohub.Scoreboard.scoreboard;
+import nl.rako.rakohub.Functions.Console;
+import nl.rako.rakohub.Scoreboard.RakoScoreboardManager;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
@@ -12,16 +12,16 @@ import org.bukkit.plugin.java.JavaPlugin;
 import java.util.HashMap;
 
 
-public class main extends JavaPlugin {
-    public static main plugin;
+public class rakohub extends JavaPlugin {
+    public static rakohub plugin;
     public static HashMap<String, Integer> playerCount = new HashMap<String, Integer>();
 
-    public main() {
+    public rakohub() {
     }
 
     public void onEnable() {
         plugin = this;
-        console.sendConsole(ChatColor.GREEN + "RakoHub enabled!");
+        Console.sendConsole(ChatColor.GREEN + "RakoHub enabled!");
         Bungee.bungeePluginChannel(this, "BungeeCord");
         EventManager.registerEvents();
         playerCount.put("ALL", 0);
@@ -36,13 +36,13 @@ public class main extends JavaPlugin {
                 Bungee.bungeePlayerCount("dev");
 
                 for( Player player : Bukkit.getOnlinePlayers()) {
-                    scoreboard.createScoreboard(player);
+                    RakoScoreboardManager.createScoreboard(player);
                 }
             }
         }, 60L, 60L);
     }
 
     public void onDisable() {
-        console.sendConsole(ChatColor.RED + "RakoHub disabled!");
+        Console.sendConsole(ChatColor.RED + "RakoHub disabled!");
     }
 }

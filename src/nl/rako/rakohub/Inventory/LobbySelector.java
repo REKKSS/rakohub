@@ -1,7 +1,7 @@
 package nl.rako.rakohub.Inventory;
 
 import nl.rako.rakohub.Functions.InventoryManager;
-import nl.rako.rakohub.main;
+import nl.rako.rakohub.rakohub;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -12,9 +12,9 @@ public class LobbySelector {
     public static Inventory lobbySelector;
     public static void openLobbySelector(Player player) {
 
-        int lobbyPlayerCount = main.playerCount.get("lobby");
-        int lobby2PlayerCount = main.playerCount.get("lobby2");
-        int devPlayerCount = main.playerCount.get("dev");
+        int lobbyPlayerCount = rakohub.playerCount.get("lobby");
+        int lobby2PlayerCount = rakohub.playerCount.get("lobby2");
+        int devPlayerCount = rakohub.playerCount.get("dev");
 
         lobbySelector = Bukkit.createInventory(null, 9, "Lobby Selector");
         lobbySelector.setItem(0, InventoryManager.createItem(Material.QUARTZ_BLOCK, (ChatColor.GREEN + "Lobby 1"), (ChatColor.GRAY + "Players online: " + lobbyPlayerCount)));

@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.net.InetAddress;
 import java.net.URL;
 
-public class ipAddress {
+public class IpAddress {
 
     public static String getDomain;
 
