@@ -7,6 +7,7 @@ package nl.rako.rakohub.Scoreboard;
 
 import java.util.Iterator;
 
+import nl.rako.rakohub.Functions.PrefixManager;
 import nl.rako.rakohub.rakohub;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -14,8 +15,6 @@ import org.bukkit.entity.Player;
 import org.bukkit.scoreboard.DisplaySlot;
 import org.bukkit.scoreboard.Objective;
 import org.bukkit.scoreboard.Score;
-import org.bukkit.scoreboard.Scoreboard;
-import org.bukkit.scoreboard.ScoreboardManager;
 
 public class RakoScoreboardManager {
     public static org.bukkit.scoreboard.Scoreboard board;

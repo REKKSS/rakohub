@@ -3,8 +3,9 @@
 // (powered by FernFlower decompiler)
 //
 
-package nl.rako.rakohub.Scoreboard;
+package nl.rako.rakohub.Functions;
 
+import nl.rako.rakohub.Scoreboard.RakoScoreboardManager;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.scoreboard.Team;

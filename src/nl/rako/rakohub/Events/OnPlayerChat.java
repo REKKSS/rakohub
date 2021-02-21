@@ -1,7 +1,7 @@
 package nl.rako.rakohub.Events;
 
 
-import nl.rako.rakohub.Scoreboard.prefix;
+import nl.rako.rakohub.Functions.PrefixManager;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -14,7 +14,7 @@ public class OnPlayerChat implements Listener {
     public void onPlayerChat(AsyncPlayerChatEvent e) {
         Player player = e.getPlayer();
         String dispayName = player.getDisplayName();
-        e.setFormat(prefix.getRankname(player) + dispayName + ChatColor.WHITE + ": " + e.getMessage() );
+        e.setFormat(PrefixManager.getRankname(player) + dispayName + ChatColor.WHITE + ": " + e.getMessage() );
     }
 
 }

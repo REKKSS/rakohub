@@ -2,8 +2,8 @@ package nl.rako.rakohub.Events;
 
 import nl.rako.rakohub.Inventory.GameSelector;
 import nl.rako.rakohub.Inventory.PlayerJoinInventory;
-import nl.rako.rakohub.Scoreboard.prefix;
-import nl.rako.rakohub.Scoreboard.scoreboard;
+import nl.rako.rakohub.Functions.PrefixManager;
+import nl.rako.rakohub.Scoreboard.RakoScoreboardManager;
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.entity.Player;
@@ -26,7 +26,7 @@ public class OnPlayerJoin implements Listener {
         player.setFoodLevel(20);
         player.teleport(player.getWorld().getSpawnLocation());
         player.setGameMode(GameMode.ADVENTURE);
-        scoreboard.createScoreboard(player);
+        RakoScoreboardManager.createScoreboard(player);
         if (player.hasPermission("rako.fly")) {
             player.setAllowFlight(true);
         } else if (player.hasPermission("rako.vanish")) {
