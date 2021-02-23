@@ -3,11 +3,11 @@
 // (powered by FernFlower decompiler)
 //
 
-package nl.rako.rakohub.Scoreboard;
+package nl.rako.rakohub.scoreboard;
 
 import java.util.Iterator;
 
-import nl.rako.rakohub.Functions.PrefixManager;
+import nl.rako.rakohub.functions.PrefixManager;
 import nl.rako.rakohub.rakohub;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;

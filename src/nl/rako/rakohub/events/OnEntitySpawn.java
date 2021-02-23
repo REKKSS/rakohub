@@ -1,10 +1,8 @@
-package nl.rako.rakohub.Events;
+package nl.rako.rakohub.events;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntitySpawnEvent;
-
-import java.io.IOException;
 
 public class OnEntitySpawn implements Listener {
 

@@ -1,6 +1,6 @@
-package nl.rako.rakohub.Inventory;
+package nl.rako.rakohub.inventorys;
 
-import nl.rako.rakohub.Functions.InventoryManager;
+import nl.rako.rakohub.functions.InventoryManager;
 import nl.rako.rakohub.rakohub;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;

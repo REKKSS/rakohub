@@ -1,7 +1,7 @@
-package nl.rako.rakohub.Events;
+package nl.rako.rakohub.events;
 
 
-import nl.rako.rakohub.Functions.PrefixManager;
+import nl.rako.rakohub.functions.PrefixManager;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

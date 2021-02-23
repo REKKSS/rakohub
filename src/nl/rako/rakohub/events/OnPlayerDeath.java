@@ -1,4 +1,4 @@
-package nl.rako.rakohub.Events;
+package nl.rako.rakohub.events;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

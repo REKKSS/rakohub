@@ -1,10 +1,10 @@
 
 package nl.rako.rakohub;
 
-import nl.rako.rakohub.Events.*;
-import nl.rako.rakohub.Functions.Bungee;
-import nl.rako.rakohub.Functions.Console;
-import nl.rako.rakohub.Scoreboard.RakoScoreboardManager;
+import nl.rako.rakohub.events.*;
+import nl.rako.rakohub.functions.Bungee;
+import nl.rako.rakohub.functions.Console;
+import nl.rako.rakohub.scoreboard.RakoScoreboardManager;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;

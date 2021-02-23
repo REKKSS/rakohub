@@ -1,4 +1,4 @@
-package nl.rako.rakohub.Events;
+package nl.rako.rakohub.events;
 
 import nl.rako.rakohub.rakohub;
 import org.bukkit.Bukkit;

@@ -1,4 +1,4 @@
-package nl.rako.rakohub.Functions;
+package nl.rako.rakohub.functions;
 
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;

@@ -1,8 +1,8 @@
-package nl.rako.rakohub.Events;
+package nl.rako.rakohub.events;
 
-import nl.rako.rakohub.Inventory.GameSelector;
-import nl.rako.rakohub.Functions.Bungee;
-import nl.rako.rakohub.Inventory.LobbySelector;
+import nl.rako.rakohub.inventorys.GameSelector;
+import nl.rako.rakohub.functions.Bungee;
+import nl.rako.rakohub.inventorys.LobbySelector;
 import nl.rako.rakohub.rakohub;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;

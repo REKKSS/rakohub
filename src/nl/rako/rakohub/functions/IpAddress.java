@@ -1,4 +1,4 @@
-package nl.rako.rakohub.Functions;
+package nl.rako.rakohub.functions;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package nl.rako.rakohub.Events;
+package nl.rako.rakohub.events;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

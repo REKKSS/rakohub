@@ -1,9 +1,7 @@
-package nl.rako.rakohub.Events;
+package nl.rako.rakohub.events;
 
-import nl.rako.rakohub.Inventory.GameSelector;
-import nl.rako.rakohub.Inventory.PlayerJoinInventory;
-import nl.rako.rakohub.Functions.PrefixManager;
-import nl.rako.rakohub.Scoreboard.RakoScoreboardManager;
+import nl.rako.rakohub.inventorys.PlayerJoinInventory;
+import nl.rako.rakohub.scoreboard.RakoScoreboardManager;
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
 import org.bukkit.entity.Player;

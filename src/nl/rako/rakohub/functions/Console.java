@@ -3,7 +3,7 @@
 // (powered by FernFlower decompiler)
 //
 
-package nl.rako.rakohub.Functions;
+package nl.rako.rakohub.functions;
 
 import org.bukkit.Bukkit;
 
